@@ -1,0 +1,149 @@
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b, rgb(249, 172, 29)); 
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    animation: fadeIn 2s ease-out;
+}
+
+.navbar-brand:hover {
+    color: #fff1e6;
+    transition: color 0.3s;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.search-box i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #ff7e5f;
+}
+
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons a, .icons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.icons a:hover, .icons button:hover {
+    transform: scale(1.1);
+    color: #fff1e6;
+}
+
+.nav-categories {
+    background: linear-gradient(to right, #fff1e6, #ffe0b2); 
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff7e5f;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-box {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
